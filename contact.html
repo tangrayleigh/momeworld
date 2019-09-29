@@ -5,20 +5,25 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-	<title>Rayleigh Tang - Contact</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Bootstrap - Contact</title>
 </head>
 
 <body>
 	<div class="gridBox">
 		<header class="header">
 			<h1>Rayleigh Tang</h1>
-			<nav class="nav">
-				<ul>
-					<li><a href="index.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link active" href="index.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="portfolio.html">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
 		</header>
 
 
@@ -26,29 +31,30 @@
 		<main class="content">
 			<h2>Contact</h2>
 			<form>
-				<div>
-					<label for="name">Name</label>
-					<input id="name" type="text">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Name</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
 				</div>
-				<div>
-					<label for="email">Email</label>
-					<input id="email" type="email">
+				<div class="form-group">
+					<label for="exampleInputPassword1">Email</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Email">
 				</div>
-				<div>
-					<label for="message">Message</label>
-					<textarea id="message"></textarea>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Message</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Message">
 				</div>
-				<div>
-					<button type="submit">Submit</button>
-				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
 			</form>
 		</main>
 
 		<footer class="footer">
 			<p><small>Copyright &copy; 2019 Rayleigh Tang. All rights reserved.</small></p>
 		</footer>
-
 	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 
