@@ -1,0 +1,239 @@
+/* General Styling */
+body {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	margin: 0 auto;
+}
+
+.gridBox {
+	background-color: rgba(0, 0, 0, 0.0.5);
+}
+
+h1, .nav, .content, figcaption, .footer {
+	padding: 1rem;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: deepskyblue;
+	text-decoration: underline;
+}
+
+h1, h2 {
+	color: deepskyblue;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-flow: wrap;
+	background: url('../images/real_cf_@2X.png') repeat;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.header {
+	background-color: white;
+	border-bottom: 1px solid rgba(221, 221, 221, 1);
+	box-shadow: 0 3px 9px 0 rgba(221,221,221,0.7);	
+}
+
+h1, .nav {
+	width: 50%;
+}
+
+.nav {
+	background: url('../images/real_cf_@2X.png') repeat;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.nav > ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	height: 100%;
+}
+
+.nav > ul > li {
+	font-weight: bold;
+	color: white;
+	width: 100%;
+}
+
+.nav > ul > li:visited {
+	color: white;
+}
+
+.nav > ul > li:nth-child(1),
+.nav > ul > li:nth-child(2) {
+	border-right: 1px solid rgba(204, 204, 204, 1);
+}
+
+.content {
+	background-color: rgba(255, 255, 255, 1);
+	border: 1px solid rgba(221, 221, 221, 1);
+	box-shadow: 0 3px 3px 1px rgba(221, 221, 221, 1);
+	margin: 1rem;
+	height: fit-content;
+}
+
+.content > h2 {
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 1rem 0;
+	padding: 0 0 1rem;
+}
+
+.content > img {
+	float: left;
+	margin: 0 1rem 1rem 0;
+	width: 50%;
+}
+
+.footer {
+	background: url('../images/real_cf_@2X.png') repeat;
+}
+
+.footer > p {
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+}
+
+/* portfolio page - rulesets */
+.imgWrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.figContainer {
+	padding: 0.5rem;
+	width: 50%;
+}
+
+
+.imgContainer {
+	position: relative;
+	box-shadow: -3px 3px 9px 1px rgb(0, 0, 0, 0.7);
+}
+
+.imgContainer > img {
+	width: 100%;
+	height: 100%;
+}
+
+figcaption {
+	font-weight: bold;
+	position: absolute;
+	bottom: 1.5rem;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+/* contact page - form styling */
+form > div {
+	font-weight: bold;
+	margin: 2em 0 0;
+}
+
+label {
+	line-height: 2em;
+}
+
+input,
+textarea {
+	display: block;
+	border: 1px solid #ccc;
+	line-height: 2em;
+	padding: 0.5em;
+	width: 100%;
+}
+
+textarea {
+	height: 15em;
+}
+
+button {
+	color: #fff;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 1em;
+	font-weight: bold;
+	padding: 1em 2em;
+}
+
+a:hover,
+a:active {
+	color:deepskyblue;
+	text-decoration-line: underline;
+}
+
+/* media queries */
+@media screen and (max-width: 640px) {
+	.header > h1 {
+		text-align: center;
+	}
+
+	h1, .nav {
+		width: 100%;
+	}
+
+	.content > img {
+		margin: 0 0 1rem 0;
+		width: 100%;
+	}
+
+	.figContainer {
+		margin: 0 0 1.5rem;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 980px) {
+	.content {
+		max-width: 960px;
+	}
+}
+
+/* Grid Layout */
+.header {
+	grid-area: header;
+}
+.nav {
+	grid-area: nav;
+}
+.content {
+	grid-area: main;
+}
+.footer {
+	grid-area: footer;
+}
+.gridBox {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 1fr;
+	grid-template-areas: 
+		"header"
+		"main"
+		"footer";
+	min-height: 100vh;
+}
+
+
+
