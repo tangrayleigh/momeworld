@@ -1,7 +1,7 @@
 /* CSS Reset */
-html *,
-html *::before,
-html *::after {
+html > *,
+html > *::before,
+html > *::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
