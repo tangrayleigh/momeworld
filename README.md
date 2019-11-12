@@ -1,1 +1,1 @@
-Assignment 2: Responsiveness
+Responsiveness Assignment - Bootstrap
